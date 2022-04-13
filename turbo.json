@@ -4,6 +4,12 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "difftastic-crate#build": {
+      "outputs": ["../../packages/difftastic"]
+    },
+    "web#build": {
+      "dependsOn": ["difftastic-crate#build"]
+    },
     "lint": {
       "outputs": []
     },
